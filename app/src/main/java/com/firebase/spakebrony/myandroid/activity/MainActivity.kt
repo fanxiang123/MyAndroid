@@ -3,16 +3,15 @@ package com.firebase.spakebrony.myandroid.activity
 import android.Manifest
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Toast
 import com.firebase.spakebrony.myandroid.BaseActivity
 import com.firebase.spakebrony.myandroid.R
 import com.firebase.spakebrony.myandroid.utilities.NotificationUtil
 import com.permissionx.guolindev.PermissionX
+import com.thefinestartist.finestwebview.FinestWebView
 import kotlinx.android.synthetic.main.activity_main.*
-
 import kotlinx.android.synthetic.main.content_toolbar.*
+
 
 class MainActivity : BaseActivity() {
 
@@ -27,6 +26,15 @@ class MainActivity : BaseActivity() {
         list.setOnClickListener {
             startActivity(Intent(this,ListActivity::class.java))
         }
+
+        gps.setOnClickListener {
+            startActivity(Intent(this,GpsActivity::class.java))
+        }
+
+        web.setOnClickListener {
+            FinestWebView.Builder(this).show("https://www.baidu.com/")
+        }
+
         permission.setOnClickListener {
 
             PermissionX.init(this)

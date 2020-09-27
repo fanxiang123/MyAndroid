@@ -1,11 +1,10 @@
 package com.firebase.spakebrony.myandroid.utilities
 
-import android.app.Activity
+import android.content.Context
+import android.content.pm.PackageManager
 import android.view.View
-import android.widget.Toolbar
-import androidx.annotation.Nullable
+import androidx.core.app.ActivityCompat
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.content_toolbar.*
 
 public class Tools {
 
@@ -16,5 +15,14 @@ public class Tools {
             .setAction("Action", null).show()
         }
 
+        fun checkSelfPermission(
+            context: Context?,
+            permission: String?
+        ): Boolean {
+            return ActivityCompat.checkSelfPermission(
+                    context!!,
+                    permission!!
+                ) != PackageManager.PERMISSION_GRANTED
+        }
     }
 }

@@ -56,4 +56,31 @@
         fancy:fb_text="适配API26上下的通知栏"
         fancy:fb_textColor="#FFFFFF" />
 
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/gps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackground"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_defaultColor="@color/appColor"
+        fancy:fb_focusColor="@color/focusColor"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="8dp"
+        fancy:fb_text="获取Gps定位"
+        fancy:fb_textColor="#FFFFFF" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackground"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_defaultColor="@color/appColor"
+        fancy:fb_focusColor="@color/focusColor"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="8dp"
+        fancy:fb_text="内置浏览器"
+        fancy:fb_textColor="#FFFFFF" />
 </LinearLayout>
