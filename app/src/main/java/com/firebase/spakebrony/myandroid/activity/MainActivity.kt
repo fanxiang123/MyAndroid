@@ -32,7 +32,9 @@ class MainActivity : BaseActivity() {
         }
 
         web.setOnClickListener {
-            FinestWebView.Builder(this).show("https://www.baidu.com/")
+            FinestWebView.Builder(this)
+                .showSwipeRefreshLayout(false)
+                .show("https://www.baidu.com/")
         }
 
         permission.setOnClickListener {
