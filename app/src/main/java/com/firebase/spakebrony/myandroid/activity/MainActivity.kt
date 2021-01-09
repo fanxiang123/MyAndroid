@@ -30,6 +30,9 @@ class MainActivity : BaseActivity() {
         gps.setOnClickListener {
             startActivity(Intent(this,GpsActivity::class.java))
         }
+        rx_java.setOnClickListener {
+            startActivity(Intent(this,RxjavaActivity::class.java))
+        }
 
         web.setOnClickListener {
             FinestWebView.Builder(this)
