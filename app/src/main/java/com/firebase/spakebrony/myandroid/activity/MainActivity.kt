@@ -63,6 +63,9 @@ class MainActivity : BaseActivity() {
             val notificationUtils = NotificationUtil(this)
             notificationUtils.sendNotification("通知栏的title", "通知栏的信息")
         }
+        listViewPage.setOnClickListener {
+            startActivity(Intent(this,ListViewPageActivity::class.java))
+        }
     }
 
     private fun initToolbar(){

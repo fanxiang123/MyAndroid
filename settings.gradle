@@ -1,2 +1,2 @@
 rootProject.name='MyAndroid'
-include ':app'
+include ':app', ':library'

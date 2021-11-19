@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
-
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+    ndkVersion "22.1.7171670"
     defaultConfig {
         applicationId "com.firebase.spakebrony.myandroid"
-        minSdkVersion 15
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -84,5 +84,14 @@ dependencies {
 
     //json
     implementation 'com.alibaba:fastjson:1.2.51'
+
+
+    //faceImage
+    implementation 'com.facebook.fresco:fresco:2.6.0'
+
+
+    //tabLayout
+    implementation project(':library')
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
 
 }

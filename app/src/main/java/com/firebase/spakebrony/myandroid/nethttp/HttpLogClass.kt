@@ -17,7 +17,7 @@ internal object HttpLogClass {
                     Log.d(TAG, text)
                 } catch (e: UnsupportedEncodingException) {
                     e.printStackTrace()
-                    Log.e(TAG, e.message)
+                    Log.e(TAG, e.message!!)
                 }
             }
             httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
